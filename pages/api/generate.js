@@ -48,6 +48,11 @@ export default async function (req, res) {
   }
 }
 
+
+// --q: What is the purpose of the generatePrompt function?
+// --a: The generatePrompt function takes in an animal and returns a string that is used as the prompt for the OpenAI API.
+// The prompt is a string that contains the instructions for the AI to follow, as well as the context for the AI to use when generating the completion. 
+// The prompt is also used to generate the completion, so the prompt should contain the animal that the user entered.
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
